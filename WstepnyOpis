@@ -1,0 +1,69 @@
+Gra Arcade Space Shooter na systemy Android. 
+
+Modele użyte w grze będą pochodzić z Unity Asset Store
+
+Gracz ma za zadanie kierować i strzelać statkiem kosmicznym, przebrnąć przez 10 fal wrogów i pokonać bossa.
+
+Elementy gry:
+
+1) Statek 
+-gracz porusza statkiem za pomocą palca (statek podąża za palcem przesuwającym się po ekranie urządzenia)
+-na statek można naciśnąć palcem i będzie on tak długo za nim podążał aż gracz oderwie palec od ekranu
+-po naciśnięciu na statek, statek wyskoczy spod palca, co ułatwi widoczność 
+-statek będzie strzelał pociskami od naciśnięcia na niego do czasu oderwania palca
+-na statek zostaną nałożone granice i nie będzie on mógł ich przekroczyć 
+-statek ma jedno życie, po zderzeniu z wrogiem lub wrogim pociskiem gracz przegrywa
+-statek ma możliwość zbierania power-upów opisanych poniżej
+-po zniszczeniu statku zostaje wyświetlona wiadomość i pojawia się przycisk restartu
+
+2) Tło
+-tło złożone z kilku efektów będzie się nieustannie przemieszczało w stronę statku
+-wyświetla ilość zdobytych punktów i aktualną falę wrogów
+
+3) Pociski
+-pociski zostaną zniszczone po zetknięciu się z wrogiem lub po opuszczeniu widocznej planszy 
+
+4) Wrogowie
+-Występuje kilka rodzajów wrogów
+a) Asteroidy
+*występują w różnych wariacjach
+*obracają się wokół własnej osi 
+b) Droid
+*zostaje upuszczony przez statek matkę
+c) Statek Matka
+*najtrudniejszy do zniszczenia
+*upuszcza droidy
+d) Wrogi Statek
+e) Wrogi Statek 2
+*strzela we wszystkich kierunkach
+-każdy z wrogich statków stara się uniknąć pocisków gracza
+-silniejsi wrogowie pojawiają się w późniejszych etapach gry
+-ich wybór jest losowy, w późniejszych etapach gry kolejni wrogowie zostają dodani do puli, z której są losowane pojawiające się obiekty
+
+5) Power-Up
+-występuje kilka rodzajów power-upów
+a) Tarcza
+*zapewnia graczowi dodatkowe życie
+*zostaje wyświetlony dodatkowy efekt nałożony na statek
+b) Szybkość
+*zostaje zwiększona szybkość strzału statku
+*zostaje wyświetlony dodatkowy efekt nałożony na statek
+c) Spowolnienie czasu
+*wszystko wokół statku zostaje spowolnione, włącznie z wystrzeliwanymi przez niego pociskami
+-efekty pojedynczych rodzajów się nie nakładają 
+
+6) Boss
+-walka jest podzielona na etapy
+-po każdym etapie boss obraca się wokół własnej osi
+a) etap pierwszy
+*boss wystrzeliwuje 5 rakiet i każda po wybuchu tworzy elektryczne pole 
+b) etap drugi 
+*boss wystrzeliwuje dużą ilość rakiet w każdym kierunku
+c) etap trzeci
+*etap drugi + dodatkowa bariera chroniąca bossa przed obrażeniami
+d) etap czwarty
+*po bokach planszy tworzy się 5 pił obracających się wokół własnej osi i po chwili zmierzających w przeciwny koniec planszy
+-po rozpoczęciu walki z bossem na ekranie wyświetla się pasek zdrowia bossa, który wraz z otrzymanymi 
+obrażeniami zmniejsza się i zmienia swój kolor
+-po pokonaniu bossa zostaje wyświetlona wiadomość i pojawia się przycisk restartu
+
